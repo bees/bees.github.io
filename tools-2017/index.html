@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- SEO --> 
+    <title>Frontend Developer Toolchain | Granular, Inc</title>
+    <meta name="description" content="Figure out the tools you actually want and need.">
+    
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/base.css">
+    
+    <!-- CSS Colors -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/colors.css">
+
+    <link rel="stylesheet" type='text/css' media='all' href="./static/css/prism.css">
+    <script src="./static/js/prism.js"></script>
+    
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+    
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+    
+    <!-- FACEBOOK -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Frontend Developer Tools | Granular"> <!-- EDIT -->
+    <meta property="og:description" content="Figure out the tools you actually want and need."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:20:50"> <!-- EDIT -->
+    <meta property="og:image" content="static/images/granular.png"> <!-- EDIT -->
+    
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@GranularAg"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@GranularAg"> <!-- EDIT -->
+    <meta name="twitter:title" content="Frontend Developer Tools | Granular"> <!-- EDIT -->
+    <meta property="twitter:description" content="Figure out the tools you actually want and need."> <!-- EDIT -->
+    <meta name="twitter:image" content="static/images/granular.png"> <!-- EDIT -->
+    
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+    
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+    
+  </head>
+  <body>
+
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="https://granular.ag/" title="Granular">Granular.ag</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/granularag" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>Granular</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/GranularAg" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@GranularAg</em>
+            </a>
+          </li>
+          <li class="facebook">
+            <a rel="external" href="https://www.facebook.com/GranularAgriculture/" title="Facebook">
+              <svg class="fa-facebook">
+                <use xlink:href="#fa-facebook"></use>
+              </svg>
+              <em>Granular</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/jlantunez" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>jlantunez</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+    
+    <main role="main">
+      <article id="webslides" class="">
+      
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 1200px / <div class="wrap size-50"> = 600px; 
+        -->
+      
+        <section class="bg-trans-dark">
+         <span class="background dark" style="background-image:url('./static/images/titleslide.jpg')"></span>
+          <!--.wrap = container 1200px -->
+          <div class="wrap aligncenter">
+            <h1><strong>Navigating the Frontend Tools Landscape</strong></h1>
+            <p class="text-intro">Alternately: wtf is Webpack and how does it compare to Sass?</p>
+          </div>
+          <footer>
+            <div class="wrap">
+              <p><span class="alignright">arian daneshvar, frontend developer @ granular.ag</span></p>
+            </div>
+          </footer>
+          <!-- .end .wrap -->  
+        </section>
+        <section>
+          <!--.wrap = container 1200px -->
+          <div class="wrap size-50 aligncenter">
+            <p class="text-subtitle">Modern web development is awesome</p>
+            <h2>There are tons of great tools freely available</h2>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container 1200px -->
+          <div class="wrap size-50 aligncenter">
+            <p class="text-subtitle">but there's a problem</p>
+            <h2>There are <em>tons</em> of tools</h2>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container 1200px -->
+          <div class="wrap size-50 aligncenter">
+            <p class="text-intro">(it can get a bit <strong>confusing</strong>)</p>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+				<section class="slide" style="">
+          <div class="wrap">
+            <div class="card-50">
+              <div class="flex-content">
+                <h3>The Problem</h3>
+                <ul class="flexblock specs">
+                  <li>
+                    <div>
+                      <svg class="fa-question" viewBox="0 0 512 512">
+													<use xlink:href="#fa-question"></use>
+											</svg>
+                      <h2>Inconsistent Jargon</h2>
+											Similar functionality, different buzzwords.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <svg class="fa-file-text" viewBox="0 0 512 512">
+													<use xlink:href="#fa-file-text"></use>
+											</svg>
+                      <h2>Bad or non-extistent documentation</h2>
+												What's up, Webpack?
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <svg class="fa-lightbulb-o" viewBox="0 0 512 512">
+													<use xlink:href="#fa-lightbulb-o"></use>
+											</svg>
+                      <h2>Nonobviousness</h2>
+											What does this tool even do?		
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .flex-content-->
+              <figure>
+                <img class="aligncenter" src="./static/images/facebook-sad.svg" alt="sad face">
+              </figure>
+            </div>
+            <!-- .end card-50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+				<section class="slide " style="">
+          <div class="wrap size-50">
+						<h3><strong>Learning Goals</strong></h3>
+						<p>We'll learn a brief gamut of some popular FE tools:</p>
+            <ul class="text-cols">
+							<li>Package Managers</li>
+							<li>Task Runners</li>
+							<li>Bundlers + Dependency Managers</li>
+							<li>Scaffolders</li>
+							<li>Transpilers</li>
+							<li>Test tools</li>
+            </ul>
+            <hr>
+						<li>What purpose these tools serve, and why you <em>might</em> want to use them</li>
+						<li>How to set up your own toolchain</li>
+						<li>(Time allowing) How to be a better lover</li>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap aligncenter">
+            <figure>
+              <img class="aligncenter" src="./static/images/FE_tools.png" alt="frontend tools mindmap">
+              <figcaption>See fullsize <a href="https://coggle.it/diagram/WIfI01UIaygPvT_h">here</a></figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-red">
+          <div class="wrap">
+            <h1>Before we start...</h1>
+          </div>
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url('./static/images/pm.jpg')"></span>
+          <div class="wrap aligncenter">
+            <h1><strong>Package Managers</strong></h1>
+          </div>
+        </section>
+				<section class="slide" style="">
+          <div class="wrap">
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/npm-logo.svg" alt="npm logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  NPM
+                </h2>
+                <p>
+									Official package manager for Node.js
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/yarn-logo.svg" alt="yarn logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Yarn
+                </h2>
+                <p>
+									NPM drop-in replacement with improved speed and determinism.
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+				<section class="slide" style="">
+          <div class="wrap">
+            <div class="card-50">
+              <!-- end .flex-content-->
+              <figure>
+                <img class="aligncenter" src="./static/images/bower-logo.svg" alt="bower logo">
+              </figure>
+              <div class="flex-content">
+                <h3>On Bower</h3>
+                <hr>
+								<p>
+									Bower is not obsolete, despite what people on twitter think.
+									<a href="https://advancedweb.hu/2016/12/21/bower/">
+										(Read more here)
+									</a>
+								</p>
+              </div>
+            </div>
+            <!-- .end card-50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url('./static/images/runners.jpg')"></span>
+          <div class="wrap aligncenter">
+            <h1><strong>Task Runners</strong></h1>
+          </div>
+        </section>
+				<section class="slide" style="">
+          <div class="wrap">
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/grunt-logo.svg" alt="grunt logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Grunt
+                </h2>
+                <p>
+                  Configuration based task automation
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/gulp-logo.svg" alt="gulp logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Gulp
+                </h2>
+                <p>
+                  Stream based task automation
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+					<div class="wrap aligncenter">
+								<h2><strong>
+									Configuration vs Code
+								</strong></h2>
+						<div class="grid">
+              <div class="column">
+								<h2><strong>
+									Grunt
+								</strong></h2>
+            <pre><code class="language-javascript">grunt.initConfig({
+  clean: {
+    src: ['build/app.js', 'build/vendor.js']
+  },
+  
+  copy: {
+    files: [{
+      src: 'build/app.js',
+      dest: 'build/dist/app.js'
+    }]
+  }
+  
+  concat: {
+    'build/app.js': ['build/vendors.js', 'build/app.js']
+  }
+  
+  // ... other task configurations ...
+  
+});
+
+grunt.registerTask('build', ['clean', 'bower', 'browserify', 'concat', 'copy']);
+</code></pre>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+								<h2><strong>
+									Gulp
+								</strong></h2>
+            <pre><code class="language-javascript">var gulp = require('gulp');
+var sass = require('gulp-sass');
+var minifyCss = require('gulp-minify-css');
+var rename = require('gulp-rename');
+
+//declare the task
+gulp.task('sass', function(done) {
+  gulp.src('./scss/ionic.app.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./www/css/'))
+    .pipe(minifyCss())
+    .pipe(rename({ extname: '.min.css' }))
+    .pipe(gulp.dest('./www/css/'))
+    .on('end', done);
+});</code></pre>
+            <p>(code snippets in this section stolen from <a href="http://slides.com/ericjeffers/grunt-vs-gulp">here</a>)</p>
+              </div>
+              <!-- .end .column -->
+            </div> 
+					</div>
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url('./static/images/bundler-bg.jpg')"></span>
+          <div class="wrap aligncenter">
+            <h1><strong>Bundlers + Dependency Managers</strong></h1>
+          </div>
+        </section>
+
+        <section>
+          <div class="wrap aligncenter">
+            <p class="text-subtitle">The Dark Ages</p>
+            <pre><code class="language-markup">&lt;script src=&quot;jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;jquery.some.plugin.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;</code></pre>
+            <p>(code snippets in this section stolen from <a href="http://blog.andrewray.me/webpack-when-to-use-and-why/">here</a>)</p>
+          </div>
+        </section>
+        <section>
+          <div class="wrap aligncenter">
+            <p class="text-subtitle">Getting Better</p>
+            <pre><code class="language-javascript">// build-script.js
+var scripts = [  
+    'jquery.min.js',
+    'jquery.some.plugin.js',
+    'main.js'
+].concat().uglify().writeTo('bundle.js');</code></pre>
+            <pre><code class="language-markup">&lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;</code></pre>
+          </div>
+        </section>
+
+        <section>
+          <div class="wrap">
+            <div class="card-50">
+              <!-- end .flex-content-->
+              <figure>
+                <img class="aligncenter" src="./static/images/ast.png" alt="abstract syntax tree">
+              </figure>
+              <figure>
+                <img class="aligncenter" src="./static/images/dpgraph.jpg" alt="dependency graph">
+              </figure>
+            </div>
+          </div>
+        </section>
+				<section class="slide" style="">
+          <div class="wrap">
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/webpack-logo.svg" alt="webpack logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Webpack
+                </h2>
+                <p>
+                Capable of transforming, bundling, or packaging just about any resource or asset.
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/browserify-logo.svg" alt="browserify logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Browserify
+                </h2>
+                <p>
+                  Lets you require('modules') in the browser by bundling up all of your dependencies.
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/rollup-logo.svg" alt="rollup logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Rollup
+                </h2>
+                <p>
+                  Statically analyses your code, and your dependencies, and includes the bare minimum in your bundle.
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url('./static/images/scaff.jpg')"></span>
+          <div class="wrap aligncenter">
+            <h1><strong>Scaffolders</strong></h1>
+          </div>
+        </section>
+				<section class="slide" style="">
+          <div class="wrap">
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/yeoman-logo.svg" alt="yeoman logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Yeoman
+                </h2>
+                <p>
+                  npm + Grunt + Yo
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/slush-logo.png" alt="slush logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Slush
+                </h2>
+                <p>
+                  "Gulp as a replacement for Yeoman"
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url('./static/images/transp.jpg')"></span>
+          <div class="wrap aligncenter">
+            <h1><strong>Transpilers</strong></h1>
+          </div>
+        </section>
+
+				<section class="slide" style="">
+          <div class="wrap aligncenter">
+            <h2><strong>
+              JavaScript
+            </strong></h2>
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/ts.png" alt="typescript logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  TypeScript
+                </h2>
+                <p>
+                  Strict superset of Javascript, adds static typing and class based OO paradigms to JavaScript
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/babel.png" alt="babel logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Babel
+                </h2>
+                <p>
+                    A compiler for next-generation JavaScript that beat its competition when someone at Facebook said they liked it better.
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+				<section class="slide" style="">
+          <div class="wrap aligncenter">
+            <h2><strong>
+              CSS
+            </strong></h2>
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/sass.png" alt="sass logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Sass
+                </h2>
+                <p>
+                  Sass adds a wealth of features such as:
+                    <ul>
+                      <li>
+                        Variables
+                      </li>
+                      <li>
+                        Nesting
+                      </li>
+                      <li>
+                        Mixins
+                      </li>
+                    </ul>
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/stylus-logo.svg" alt="stylus logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Stylus
+                </h2>
+                <p>
+                  Inspired by Sass, largely the same features with more minimal syntax
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url('./static/images/testing.jpg')"></span>
+          <div class="wrap aligncenter">
+            <h1><strong>Testing</strong></h1>
+          </div>
+        </section>
+
+
+				<section class="slide" style="">
+          <div class="wrap aligncenter">
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/karma-logo.svg" alt="karma logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Karma
+                </h2>
+                <p>
+                  Browser test runner
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/ava-logo.svg" alt="ava logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  AVA
+                </h2>
+                <p>
+                  Parallel test runner
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/mocha-logo.svg" alt="mocha logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Mocha
+                </h2>
+                <p>
+                  Simple serial test framework
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="./static/images/jasmine-logo.svg" alt="jasmine logo">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Jasmine
+                </h2>
+                <p>
+                  Full-featured test framework
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-60-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-red">
+          <div class="wrap aligncenter">
+            <h2>
+            <strong>Demo</strong>
+            </h2>
+            <p class="text-subtitle">(Thanks for your patience)</p>
+          </div>
+        </section>
+      </article>
+      <!-- end article -->
+    </main>
+    <!-- end main --> 
+    
+   <!-- Remove #webslides element :)
+   
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/jlantunez/webslides">open source solution</a>, by <a href="https://twitter.com/jlantunez">@jlantunez</a>.</p>
+      </div>
+    </footer>  --> 
+    
+    <!-- jQuery (required for slides to work) -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="static/js/webslides.js"></script>
+    
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+    
+  </body>
+</html>
